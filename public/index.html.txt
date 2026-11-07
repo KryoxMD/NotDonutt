@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NotDonut SMP</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#071323;color:white;font-family:Arial,sans-serif}
+header{padding:22px 8%;display:flex;justify-content:space-between;align-items:center;background:#0b1d35}
+.logo{font-size:27px;font-weight:900;color:#65c8ff}
+nav a{color:white;text-decoration:none;margin-left:22px;font-weight:bold}
+.hero{text-align:center;padding:110px 20px 90px;background:linear-gradient(135deg,#102f54,#071323)}
+h1{font-size:65px;margin:0;color:#75ceff}
+.hero p{color:#c2dff5;font-size:19px}
+button,.btn{background:#55baff;border:0;color:#061629;padding:14px 25px;border-radius:9px;font-weight:bold;cursor:pointer;text-decoration:none;margin:8px}
+section{padding:55px 8%;text-align:center}
+.cards{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.card{background:#10243d;border:1px solid #24517a;border-radius:14px;padding:28px;width:240px}
+.card h3{color:#75ceff}
+footer{text-align:center;padding:30px;color:#8baac5;background:#09182a}
+@media(max-width:650px){header{flex-direction:column;gap:15px}nav a{margin:7px;font-size:13px}h1{font-size:43px}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">🍩 NOTDONUT SMP</div>
+<nav>
+<a href="/NotDonut">Home</a>
+<a href="/NotDonut/Store">Store</a>
+<a href="/NotDonut/Stats">Stats</a>
+<a href="/NotDonut/Leaderboard">Leaderboard</a>
+<a href="/NotDonut/Staff">Staff</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>NOTDONUT SMP</h1>
+<p>Your next Minecraft adventure starts here.</p>
+<p>Survival. Economy. PvP. Community.</p>
+<button onclick="copyIP()">Copy Server IP</button>
+<a class="btn" href="/NotDonut/Store">Visit Store</a>
+<p id="copyMessage"></p>
+</div>
+
+<section>
+<h2>WELCOME TO NOTDONUT</h2>
+<p>Join our community and start building your legacy.</p>
+<div class="cards">
+<div class="card"><h3>⚔ Survival</h3><p>Explore and build your empire.</p></div>
+<div class="card"><h3>💰 Economy</h3><p>Earn money and become rich.</p></div>
+<div class="card"><h3>🏆 Competition</h3><p>Climb the leaderboard.</p></div>
+</div>
+</section>
+
+<footer>© 2026 NotDonut SMP. All rights reserved.</footer>
+
+<script>
+function copyIP(){
+navigator.clipboard.writeText("notdonutt.play.hosting").then(()=>{
+document.getElementById("copyMessage").textContent="IP copied!";
+});
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NotDonut SMP - Staff</title>
+<style>
+body{margin:0;background:#071323;color:white;font-family:Arial;text-align:center}
+header{padding:22px;background:#0b1d35}
+header a{color:#75ceff;text-decoration:none;font-weight:bold}
+h1{font-size:45px;color:#75ceff;margin-top:55px}
+.card{background:#10243d;border:1px solid #24517a;border-radius:14px;padding:35px;width:80%;max-width:550px;margin:35px auto}
+p{color:#b9d7ef;line-height:1.7}
+button{background:#55baff;border:0;padding:14px 25px;border-radius:8px;font-weight:bold;cursor:pointer}
+</style>
+</head>
+<body>
+<header><a href="/NotDonut">← BACK TO HOME</a></header>
+<h1>STAFF APPLICATIONS</h1>
+<div class="card">
+<h2>Want to join our staff team?</h2>
+<p>We're looking for helpful, friendly and responsible people to help our community grow.</p>
+<p>Interested in becoming a staff member?</p>
+<button onclick="window.location.href='https://discord.com/'">Apply on Discord</button>
+</div>
+</body>
+</html>

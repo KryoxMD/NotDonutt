@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NotDonut SMP - Leaderboard</title>
+<style>
+body{margin:0;background:#071323;color:white;font-family:Arial;text-align:center}
+header{padding:22px;background:#0b1d35}
+header a{color:#75ceff;text-decoration:none;font-weight:bold}
+h1{font-size:45px;color:#75ceff;margin-top:55px}
+table{margin:35px auto;width:85%;max-width:800px;border-collapse:collapse;background:#10243d;border-radius:12px;overflow:hidden}
+th,td{padding:18px;border-bottom:1px solid #24517a}
+th{color:#75ceff}
+p{color:#b9d7ef}
+</style>
+</head>
+<body>
+<header><a href="/NotDonut">← BACK TO HOME</a></header>
+<h1>🏆 LEADERBOARD</h1>
+<p>Top players on NotDonut SMP</p>
+<table>
+<thead><tr><th>Rank</th><th>Player</th><th>Balance</th></tr></thead>
+<tbody>
+<tr><td>🥇 1</td><td>Coming Soon</td><td>--</td></tr>
+<tr><td>🥈 2</td><td>Coming Soon</td><td>--</td></tr>
+<tr><td>🥉 3</td><td>Coming Soon</td><td>--</td></tr>
+</tbody>
+</table>
+</body>
+</html>

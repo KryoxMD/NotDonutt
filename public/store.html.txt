@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NotDonut SMP - Store</title>
+<style>
+body{margin:0;background:#071323;color:white;font-family:Arial;text-align:center}
+header{padding:22px;background:#0b1d35}
+header a{color:#75ceff;text-decoration:none;font-weight:bold}
+h1{font-size:48px;color:#75ceff;margin-top:55px}
+p{color:#b9d7ef}
+.cards{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;padding:35px}
+.card{background:#10243d;border:1px solid #24517a;border-radius:14px;padding:30px;width:230px}
+.card h2{color:#75ceff}
+button{background:#55baff;border:0;padding:12px 25px;border-radius:8px;font-weight:bold;cursor:pointer}
+footer{padding:30px;color:#8baac5}
+</style>
+</head>
+<body>
+<header><a href="/NotDonut">← BACK TO HOME</a></header>
+<h1>🍩 NOTDONUT STORE</h1>
+<p>Choose your rank and support the server!</p>
+<div class="cards">
+<div class="card"><h2>Donut+</h2><p>Starter perks and exclusive benefits.</p><button onclick="alert('Store checkout coming soon!')">View Rank</button></div>
+<div class="card"><h2>Donut++</h2><p>More perks and extra advantages.</p><button onclick="alert('Store checkout coming soon!')">View Rank</button></div>
+<div class="card"><h2>Donut+++</h2><p>Premium rank and exclusive benefits.</p><button onclick="alert('Store checkout coming soon!')">View Rank</button></div>
+<div class="card"><h2>Prime Crate</h2><p>Unlock exciting rewards.</p><button onclick="alert('Store checkout coming soon!')">View Crate</button></div>
+<div class="card"><h2>Crimson Crate</h2><p>Discover special rewards.</p><button onclick="alert('Store checkout coming soon!')">View Crate</button></div>
+</div>
+<footer>© 2026 NotDonut SMP</footer>
+</body>
+</html>

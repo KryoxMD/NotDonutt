@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NotDonut SMP - Live Stats</title>
+<style>
+body{margin:0;background:#071323;color:white;font-family:Arial;text-align:center}
+header{padding:22px;background:#0b1d35}
+header a{color:#75ceff;text-decoration:none;font-weight:bold}
+h1{font-size:45px;color:#75ceff;margin-top:55px}
+.cards{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:35px}
+.card{background:#10243d;border:1px solid #24517a;border-radius:14px;padding:30px;width:200px}
+.card h2{color:#75ceff;font-size:34px}
+p{color:#b9d7ef}
+</style>
+</head>
+<body>
+<header><a href="/NotDonut">← BACK TO HOME</a></header>
+<h1>LIVE SERVER STATS</h1>
+<p>NotDonut SMP server information</p>
+<div class="cards">
+<div class="card"><h2 id="players">--</h2><p>Online Players</p></div>
+<div class="card"><h2 id="max">--</h2><p>Maximum Players</p></div>
+<div class="card"><h2 id="status">...</h2><p>Server Status</p></div>
+</div>
+<p id="updated">Loading server information...</p>
+<script>
+async function loadStats(){
+try{
+const response=await fetch("https://api.mcsrvstat.us/3/notdonutt.play.hosting");
+const data=await response.json();
+document.getElementById("status").textContent=data.online?"ONLINE":"OFFLINE";
+document.getElementById("players").textContent=data.players?.online??0;
+document.getElementById("max").textContent=data.players?.max??"--";
+document.getElementById("updated").textContent="Last updated: "+new Date().toLocaleTimeString();
+}catch(e){
+document.getElementById("status").textContent="UNKNOWN";
+document.getElementById("updated").textContent="Could not load server information.";
+}
+}
+loadStats();
+setInterval(loadStats,30000);
+</script>
+</body>
+</html>
